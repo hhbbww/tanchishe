@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>贪吃蛇</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+	<style>
+		.snake{
+			width: 600px;
+			height: 600px;
+			background: #000;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -300px;
+			margin-top: -300px;
+			border-left: 1px solid #000;
+			border-top:1px solid #000; 
+		}
+		.xian{
+			width: 29px;
+			height: 29px;
+			background: #fff;
+			margin-right: 1px;
+			margin-bottom: 1px;
+			float: left;
+		}
+		.hot{
+			background: green;
+		}
+	</style>
+<body>
+	<div class="snake"></div>
+</body>
+<script src="index.js"></script>
+<script>
+	let game = new Snake();
+	game.star();
+	
+</script>
+</html>
